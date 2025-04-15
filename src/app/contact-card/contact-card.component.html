@@ -5,22 +5,27 @@
       src="/images/blankprofile.webp"
       alt="Profile Picture"
     />
-    <div class="name">
-      {{contact.firstName}} {{contact.lastName}}
-    </div>
-    <br>
+    <div class="name">{{ contact.firstName }} {{ contact.lastName }}</div>
+    <br />
     <div class="contact-number">
-      {{contact.pNumber}}
-      <br>
+      {{ contact.pNumber }}
+      <br />
     </div>
     <div class="contact-email">
-        {{contact.email}}
+      {{ contact.email }}
     </div>
     <div class="buttons">
-      <button class="btn btn-outline-danger btn-sm" (click)="deleteContact()">Delete</button> 
+      <button class="btn btn-outline-danger btn-sm" (click)="deleteContact()">
+        Delete
+      </button>
     </div>
     <div class="buttons">
-      <button class="btn btn-outline-primary btn-sm" [routerLink]="['contact', contact.contactId]">Edit</button>
+      <button
+        class="btn btn-outline-primary btn-sm"
+        [routerLink]="['contact', contact.contactId]"
+      >
+        Edit
+      </button>
     </div>
   </div>
 </div>
