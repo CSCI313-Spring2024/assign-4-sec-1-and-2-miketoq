@@ -1,0 +1,23 @@
+<div class="container">
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid justify-content-start">
+      <button class="btn btn-outline-success" routerLink="">Listings</button>
+      <button class="btn btn-outline-success" routerLink="add">Add Contact</button>
+    </div>
+  </nav>
+
+  <div class="add-contact">
+    <div class="title">Add Contact</div>
+    <label for="first-name-input">First Name: </label>
+    <input id="first-name-input" class="form-control" type="text" [(ngModel)]="fname"> <br>
+    <label for="last-name-input">Last Name: </label>
+    <input id="last-name-input" class="form-control" type="text" [(ngModel)]="lname">  <br>
+    <label for="phone-number-input">Phone Number: </label>
+    <input id="phone-number-input" class="form-control" type="text" [(ngModel)]="pnumber"> <br>
+    <label for="email-input">Email: </label>
+    <input id="email-input" class="form-control" type="text" [(ngModel)]="email">
+  </div>
+
+
+   <button class="btn btn-danger" routerLink="">Cancel</button>
+   <button class="btn btn-success" (click)="cContact()" routerLink="">Submit</button>

@@ -1,0 +1,27 @@
+<div class="container">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid justify-content-start">
+            <button class="btn btn-outline-success" routerLink="">Listings</button>
+            <button class="btn btn-outline-success" routerLink="add">Add Contact</button>
+        </div>
+    </nav>
+  <div class="mt-3">
+    <div class="action-buttons">
+      
+    </div> 
+    <div class="row">
+      @for (contact of contacts; track contact.contactId)
+      {
+        <div class="col-md-4 my-2 mx-0">
+            <app-contact-card [id]="contact.contactId"></app-contact-card> 
+        </div>
+
+           <!-- TODO: Make the contact-card a consistant shape (Just for this sake, let's just
+            make it as long as the longest name) -->
+
+            <!-- How would I refresh the contact-list page to automatically
+             update the removed contacts? -->
+      }
+    </div>
+  </div>
+</div>

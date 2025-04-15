@@ -1,1 +1,90 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Libre;
+    src: url(/assets/fonts/LibreBodoni-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo {
+    color: #FF8800;
+    font-size: 50px;
+    text-align: center;
+    font-family: Libre;
+}
+
+#orangeLogo
+{
+    width: 5em;
+}
+
+.profile-pic
+{
+    border-radius: 1em;
+    width: 4em;
+    float: left;
+    margin-right: 1em;
+    margin-left: 0.25em;
+    margin-top: 0.25em;
+}
+
+.contact-card
+{
+    /*margin-left: 0.5em;*/
+    margin-right: 0.5em;
+    margin-bottom: 1em;
+    font-family: Libre;
+    float: left;
+    max-width: 500px;
+    box-shadow: 1px 1px 15px #000000;
+}
+
+.name
+{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Libre;
+    float: right;
+    margin-right: 0.25em;
+}
+
+.title
+{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Libre;
+}
+/*
+Make sure to fix the fonts, maybe just use Roboto which is what Kotala used in his example
+*/
+.buttons
+{
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+    float: right;
+    
+}
+
+.action-buttons
+{
+    margin-right: 2em;
+    margin-bottom: 5em;
+    float: right;
+}
+
+.add-contact
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    
+}
+
+.contact-number
+{
+
+}
+
+.contact-email
+{
+    margin-left: 1em;
+}
